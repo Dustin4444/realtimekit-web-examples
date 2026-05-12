@@ -1,16 +1,18 @@
 name: Deploy Angular Examples (Staging)
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
       - staging
     paths:
       - 'angular-examples/**'
+  workflow_dispatch: {}
 
 jobs:
   deploy:
-    permissions:
-      contents: read
     runs-on: ubuntu-latest
     name: Deploy Angular Examples (Staging)
     steps:
