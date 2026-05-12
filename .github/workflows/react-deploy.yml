@@ -1,11 +1,15 @@
 name: Deploy React Examples
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
       - main
     paths:
       - 'react-examples/**'
+  workflow_dispatch: {}
 
 jobs:
   deploy:
