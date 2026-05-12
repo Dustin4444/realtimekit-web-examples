@@ -9,6 +9,7 @@ on:
       - staging
     paths:
       - 'react-examples/**'
+  workflow_dispatch: {}
 
 jobs:
   deploy:

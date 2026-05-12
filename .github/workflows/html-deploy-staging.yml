@@ -8,6 +8,7 @@ on:
       - staging
     paths:
       - 'html-examples/**'
+  workflow_dispatch: {}
 
 jobs:
   deploy:
